@@ -1,0 +1,38 @@
+body{
+    font-family: 'Space Mono', monospace;
+  color: rgb(109, 71, 2); 
+}
+
+/*START: Home Code*/
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+}
+.Home-nav .Home-div a:hover { 
+  background-color: #ff8800;
+  color: yellow;
+}
+.Home-div a{
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(231, 93, 0, 0.726);
+  padding: 10px;
+}
+.Home-main .main-nav a:hover{
+  text-decoration: underline;
+}
+.main-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.main-nav a{
+  color: rgba(231, 93, 0, 0.726);
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+/*END: Home Code*/
+
+
