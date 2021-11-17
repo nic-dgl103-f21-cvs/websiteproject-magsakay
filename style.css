@@ -1,16 +1,21 @@
 body{
-    font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', monospace;
   color: rgb(109, 71, 2); 
 }
-
-/*START: Home Code*/
+.Home-body{
+  margin: 0;
+}
 .Home-header {
   display: flex;
   justify-content: space-between;
 }
+.Home-nav{
+  padding-top: 2.5%;
+  padding-right: 2%;
+}
 .Home-nav .Home-div a:hover { 
-  background-color: #ff8800;
-  color: yellow;
+  background-color:rgb(255, 217, 0);
+  color: rgb(194, 88, 2);
 }
 .Home-div a{
   display: inline-block;
@@ -20,19 +25,80 @@ body{
   padding: 10px;
 }
 .Home-main .main-nav a:hover{
-  text-decoration: underline;
+  text-decoration:underline 3px;
 }
 .main-nav{
+  background-image: url(images/chickenplatter1.jpg);
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 90vh;
   display: flex;
   justify-content: space-around;
   padding: 15px;
 }
-.main-nav a{
-  color: rgba(231, 93, 0, 0.726);
-  text-decoration: none;
-  font-size: 5rem;
+.eat-BG{
+  background-image: url(images/gotospecial.jpg);
+  background-size: 100%;
 }
+.drink-BG{
+  background-image: url(images/drink.jpg);
+  background-size: 100%;
+}
+.absorb-BG{
+  background-image: url(images/absorb.jpg);
+  background-size: 100%;
+}
+.hide-BG{
+  background-image: url(images/chickenplatter.jpg);
+}
+.main-nav a{
+  color: rgb(255, 217, 0);
+  text-decoration: none;
+  font-size: 6rem;
+}
+.Home-video{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Home-video h1{
+  color: rgb(194, 88, 2);
+  padding-left: 10px;
+  padding-bottom: 30px;
 
-/*END: Home Code*/
+}
+.Home-video .video{
+  display: flex;
+  justify-content: space-around;
+}
+.aside{
+  padding-top: 15px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.aside .rsv{
+  text-decoration: none;
+  color: rgb(194, 88, 2);
+}
+.rsv{
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  padding: 5px;
+}
+.Home-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+footer{
+  background-color:rgb(65, 29, 5);
+  color: rgb(255, 217, 0);
+}
+footer div{
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+.footer-div a{
+  text-decoration: none;
+  color: rgb(255, 217, 0);
 
-
+}
