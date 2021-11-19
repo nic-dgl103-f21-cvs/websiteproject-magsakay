@@ -22,27 +22,86 @@
 </header>
 
 <main class="Home-main">
+
   <article id="main-nav" class="main-nav">
     <a href="Eat.html" onmouseover="eatBG()" onmouseout="hideBG()">EAT</a>
     <a href="Drink.html" onmouseover="drinkBG()" onmouseout="hideBG()">DRINK</a>
     <a href="Absorb.html" onmouseover="absorbBG()" onmouseout="hideBG()">ABSORB</a>
   </article>
   
-  <article class="Home-video">
-    <h1>Welcome to Barrio Quatro</h1>
-    <div class="video"><video class="video" width="40%" height="10%" autoplay muted>
-    <source src="videos/welcome1.mp4" type="video/mp4">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    #myVideo {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      min-width: 50%; 
+      min-height: 50%;
+      padding: 50px;
+      display: flex;
+    }
+    
+    .content {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    #myBtn {
+      width: 100px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    </style>
+  <article class="Eat-article">
+    <video loop id="myVideo">
+      <source src="videos/welcome.mp4" type="video/mp4">
     </video>
-    <video class="video" width="40%" height="10%" autoplay muted>
-    <source src="videos/welcome.mp4" type="video/mp4">
-    </video>
+    
+    <div class="content">
+      <h1>Welcome</h1>
+      <p>BQ</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
     </div>
-  </article>
+</article>
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
   <aside class="aside">
     <a class="rsv" href="ContactUs.html">Make a Reservation</a>
   </aside>
 </main>
-
 <footer>
   <div class="footer-div">
   <h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
@@ -71,4 +130,5 @@
   }
 </script>
 </body>
+
 </html>

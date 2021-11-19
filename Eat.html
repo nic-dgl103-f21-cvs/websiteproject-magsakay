@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="Home-body">
 
 <header class="Home-header">
   <a href="Home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
@@ -22,236 +22,227 @@
 </nav>
 </header>
 
-<main>
-<h1>"Local Street Foods and Comfort Foods"</h1>
+<style>
+.Eat-main .menu{
+  display: flex;
+}
+.Eat-figure {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+.Eat-image {
+  padding-right: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.Eat-overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(194, 88, 2); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: rgb(255, 217, 0);
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+.Eat-figure:hover .Eat-overlay {
+  opacity: 1;
+}
+</style>
 
-<h2>Soup</h2>
-  <ul>
-    <li>
-      <figure><img src="images/paresrice.jpg" alt="Pares Rice" width="30%"/>
-      <figcaption>Pares Rice<br>₱55.00</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/paresmami.jpg" alt="Pares Mami" width="30%"/>
-      <figcaption>Pares Mami<br>₱55.00</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/gotoegg.jpg" alt="Goto with Egg" width="30%"/>
-      <figcaption>Goto with Egg<br>₱45.00</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/gotospecial.jpg" alt="Goto Special" width="30%"/>
-      <figcaption>Goto Special<br>₱50.00</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure><img src="images/papaitan.jpg" alt="Papaitan" width="30%"/>
-      <figcaption>Papaitan<br>₱50.00<br>Add ₱10.00 for Rice </figcaption>
-      </figure>
-    </li>
-  </ul>
+<main class="Eat-main">
+<h1 class="Eat-h1">"Local Street Foods and Comfort Foods"</h1>
 
-<h2>Barrio's Chicken</h2>
-  <ul>
-    <li>
-      <figure><img src="images/wings.jpg" alt="Chicken Wings" width="30%"/>
-      <figcaption>Chicken Wings<br>Buffalo, Sweet Chili, Teriyaki<br>₱100.00</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure><img src="images/originalfeet.jpg" alt="Original Chicken Feet" width="30%"/>
-      <figcaption>Original Chicken Feet<br>₱69.00</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure><img src="images/flavoredfeet.jpg" alt="Flavored Chicken Feet" width="30%"/>
-      <figcaption>Flavored Chicken Feet<br>₱84.00</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure><img src="images/chickenpotato.jpg" alt="Chicken Potato" width="30%"/>
-      <figcaption>Chicken Potato<br>₱20.00/pc</figcaption>
-      </figure>
-    </li>
-  </ul>
-
-<h2>Fried Street Foods</h2>
-<ul>
-  <li>
-    <figure><img src="images/turon.jpg" alt="Turon" width="30%"/>
-    <figcaption>Turon<br>₱20.00/ 3pcs</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/dynamite.jpg" alt="Dynamite" width="30%"/>
-    <figcaption>Dynamite<br>₱7.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/fishball.jpg" alt="Fishball" width="30%"/>
-    <figcaption>Fishball<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/squidball.jpg" alt="Squidball" width="30%"/>
-    <figcaption>Squidball<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/kikiam.jpg" alt="Kikiam" width="30%"/>
-    <figcaption>Kikiam<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/siomai.jpg" alt="siomai" width="30%"/>
-    <figcaption>Siomai<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/cheesestick.jpg" alt="Cheese Stick" width="30%"/>
-    <figcaption>Cheese Sick<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/kwek.jpg" alt="Kwek-Kwek" width="30%"/>
-    <figcaption>Kwek-Kwek<br>₱20.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/fries.jpg" alt="fries" width="30%"/>
-    <figcaption>Fries<br>₱20.00</figcaption>
-    </figure> 
-  </li>
-</ul>
-
-<h2>Grilled Street Foods</h2>
-<ul>
-  <li>
-    <figure><img src="images/isaw.jpg" alt="Isaw ng Manok" width="30%"/>
-    <figcaption>Isaw ng Manok<br>₱10.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/betamax.jpg" alt="Betamax" width="30%"/>
-    <figcaption>Betamax<br>₱5.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/hotdog.jpg" alt="Hotdog" width="30%"/>
-    <figcaption>Hotdog<br>₱12.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/balingit.jpg" alt="Balingit" width="30%"/>
-    <figcaption>Balingit<br>20.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/bbq.jpg" alt="Barbeque" width="30%"/>
-    <figcaption>Barbeque<br>20.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/dayold.jpg" alt="Day Old" width="30%"/>
-    <figcaption>Day Old<br>15.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/orangeegg.jpg" alt="Orange Egg" width="30%"/>
-    <figcaption>Orange Egg<br>15.00</figcaption>
-    </figure> 
-  </li>
-</ul>
-
-<h2>Platter</h2>
-<ul>
-  <li>
-    <figure><img src="images/barkada.jpg" alt="Barkada Platter" width="30%"/>
-    <figcaption>Barkada Platter<br>3-4 Persons<br>DINE IN: free lemonade<br>₱179.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/pamilya.jpg" alt="Pamilya Platter" width="30%"/>
-    <figcaption>Pamilya Platter<br>5-6 Persons<br>DINE IN: free lemonade<br>₱249.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/jowa.jpg" alt="Jowa Platter" width="30%"/>
-    <figcaption>Jowa Platter<br>₱299.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/ihaw.jpg" alt="Ihaw-Ihaw Platter" width="30%"/>
-    <figcaption>Ihaw-Ihaw Platter<br>DINE IN: free lemonade<br>₱369.00</figcaption>
-    </figure> 
-  </li> 
-</ul>
+<h2>Barrio's Platter</h2>
+<article class="menu">
+  <figure class="Eat-figure">
+    <img src="images/barkada.jpg" alt="Barkada Platter" class="Eat-image">
+    <div class="Eat-overlay">Barkada Platter <br> 3-4 Persons — ₱179.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/pamilya.jpg" alt="Pamilya Platter" class="Eat-image">
+    <div class="Eat-overlay">Pamilya Platter <br> 5-6 Persons — ₱249.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/jowa.jpg" alt="Jowa Platter" class="Eat-image">
+    <div class="Eat-overlay">Jowa Platter — ₱299.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/ihaw.jpg" alt="Ihaw-Ihaw Platter" class="Eat-image">
+    <div class="Eat-overlay">Ihaw-Ihaw Platter — ₱369.00/stick</div>
+  </figure>
+</article>
 
 <h2>Made to Order</h2>
-<ul>
-  <li>
-    <figure><img src="images/pansit.jpg" alt="Pansit" width="30%"/>
-    <figcaption>Pansit<br>₱349.00-599.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/palabok.jpg" alt="Palabok" width="30%"/>
-    <figcaption>Palabok<br>₱349.00-599.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/shanghai.jpg" alt="Lumpiang Shanghai" width="30%"/>
-    <figcaption>Lumpiang Shanghai<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/sisig.jpg" alt="Sisig" width="30%"/>
-    <figcaption>Sisig<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/dinakdakan.jpg" alt="Dinakdakan" width="30%"/>
-    <figcaption>Dinakdakan<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/menudo.jpg" alt="Menudo" width="30%"/>
-    <figcaption>Menudo<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/kare.jpg" alt="Kare-Kare" width="30%"/>
-    <figcaption>Kare-Kare<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/chickenplatter.jpg" alt="Chicken Platter" width="30%"/>
-    <figcaption>Chicken Platter<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/chickenbbq.jpg" alt="Chicken Barbeque" width="30%"/>
-    <figcaption>Chicken Barbeque<br>₱499.00</figcaption>
-    </figure> 
-  </li>
-</ul>
+<article class="menu">
+  <figure class="Eat-figure">
+    <img src="images/pansit.jpg" alt="Pansit" class="Eat-image">
+    <div class="Eat-overlay">Pansit — ₱349.00-599.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/palabok.jpg" alt="Palabok" class="Eat-image">
+    <div class="Eat-overlay">Palabok — ₱349.00-599.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/shanghai.jpg" alt="Lumpiang Shanghai" class="Eat-image">
+    <div class="Eat-overlay">Lumpiang Shanghai — ₱499.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/sisig.jpg" alt="Sisig" class="Eat-image">
+    <div class="Eat-overlay">Sisig — ₱499.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/dinakdakan.jpg" alt="Dinakdakan" class="Eat-image">
+    <div class="Eat-overlay">Dinakdakan — ₱499.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/menudo.jpg" alt="Menudo" class="Eat-image">
+    <div class="Eat-overlay">Menudo — ₱499.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/kare.jpg" alt="Kare-Kare" class="Eat-image">
+    <div class="Eat-overlay">Kare-Kare — ₱499.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/chickenplatter.jpg" alt="Chicken Platter" class="Eat-image">
+    <div class="Eat-overlay">Chicken Platter — ₱499.00</div>
+  </figure>
+  </article>
 
+<h2>Soup</h2>
+<article class="menu">
+  <figure class="Eat-figure">
+    <img src="images/gotoegg.jpg" alt="Goto with Egg" class="Eat-image">
+    <div class="Eat-overlay">Goto with Egg — ₱45.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/gotospecial.jpg" alt="Goto Special" class="Eat-image">
+    <div class="Eat-overlay">Goto Special — ₱50.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/paresrice.jpg" alt="Pares Rice" class="Eat-image">
+    <div class="Eat-overlay">Pares Rice — ₱55.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/paresmami.jpg" alt="Pares Mami" class="Eat-image">
+    <div class="Eat-overlay">Pares Mami — ₱55.00</div>
+  </figure>
+  <figure class="Eat-figure">
+    <img src="images/papaitan.jpg" alt="Papaitan with Rice" class="Eat-image">
+    <div class="Eat-overlay">Papaitan with Rice — ₱60.00</div>
+  </figure>
+</article>
+
+<h2>Barrio's Chicken</h2>
+<article class="menu">
+    <figure class="Eat-figure">
+      <img src="images/wings.jpg" alt="Goto with Egg" class="Eat-image">
+      <div class="Eat-overlay">Chicken Wings: Buffalo, Sweet Chili, Teriyaki — ₱100.00/5pcs</div>
+    </figure>
+    <figure class="Eat-figure">
+      <img src="images/originalfeet.jpg" alt="Original Chicken Feet" class="Eat-image">
+      <div class="Eat-overlay">Original Chicken Feet — ₱69.00/10pcs</div>
+    </figure>
+    <figure class="Eat-figure">
+      <img src="images/flavoredfeet.jpg" alt="Flavored Chicken Feet" class="Eat-image">
+      <div class="Eat-overlay">Flavored Chicken Feet — ₱84.00/10pcs</div>
+    </figure>
+    <figure class="Eat-figure">
+      <img src="images/chickenpotato.jpg" alt="Chicken Potato" class="Eat-image">
+      <div class="Eat-overlay">Chicken Potato — ₱25.00/pc</div>
+    </figure>
+    <figure class="Eat-figure">
+      <img src="images/chickenbbq.jpg" alt="Chicken Barbeque" class="Eat-image">
+      <div class="Eat-overlay">Chicken Barbeque — ₱60.00/pc</div>
+    </figure>
+  </article>
+
+  <h2>Fried Street Foods</h2>
+  <article class="menu">
+    <figure class="Eat-figure">
+      <img src="images/dynamite.jpg" alt="Dynamite" class="Eat-image">
+      <div class="Eat-overlay">Dynamite — ₱7.00/pc</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/fishball.jpg" alt="Fishball" class="Eat-image">
+        <div class="Eat-overlay">Fishball — ₱10.00</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/squidball.jpg" alt="Squidball" class="Eat-image">
+        <div class="Eat-overlay">Squidball — ₱10.00</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/Kikiam.jpg" alt="Kikiam" class="Eat-image">
+        <div class="Eat-overlay">Kikiam — ₱10.00</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/siomai.jpg" alt="Siomai" class="Eat-image">
+        <div class="Eat-overlay">Siomai — ₱10.00</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/cheesestick.jpg" alt="cheese Stick" class="Eat-image">
+        <div class="Eat-overlay">Cheese Stick — ₱10.00</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/fries.jpg" alt="Fries" class="Eat-image">
+        <div class="Eat-overlay">Fries — ₱20.00/10g</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/kwek.jpg" alt="Kwek-Kwek" class="Eat-image">
+        <div class="Eat-overlay">Kwek-Kwek — ₱20.00/4pcs</div>
+    </figure>
+  </article>
+
+  <h2>Grilled Street Foods</h2>
+  <article class="menu">
+    <figure class="Eat-figure">
+      <img src="images/isaw.jpg" alt="Isaw ng Manok" class="Eat-image">
+      <div class="Eat-overlay">Isaw ng Manok — ₱10.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/betamax.jpg" alt="Betamax" class="Eat-image">
+        <div class="Eat-overlay">Betamax — ₱5.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/hotdog.jpg" alt="Hotdog" class="Eat-image">
+        <div class="Eat-overlay">Hotdog — ₱12.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/bbq.jpg" alt="Barbeque" class="Eat-image">
+        <div class="Eat-overlay">Barbeque — ₱20.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/balingit.jpg" alt="Balingit" class="Eat-image">
+        <div class="Eat-overlay">Balingit — ₱20.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/dayold.jpg" alt="Day Old" class="Eat-image">
+        <div class="Eat-overlay">Day Old — ₱15.00/stick</div>
+    </figure>
+    <figure class="Eat-figure">
+        <img src="images/orangeegg.jpg" alt="Orange Egg" class="Eat-image">
+        <div class="Eat-overlay">Orange Egg — ₱15.00/stick</div>
+    </figure>
+  </article>
+
+  <aside class="aside">
+    <a class="rsv" href="ContactUs.html">Make a Reservation</a>
+  </aside>
 </main>
 
 <footer>
   <div class="footer-div">
-    <a href="ContactUs.html">Make a Reservation</a>
-    
-    <h4>— Barrio Quatro Food and Beverage House —</h4>
+  <h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
 
     <a href="https://www.facebook.com/barrioquatro2021" target="_blank">Facebook</a>
     <a href="https://instagram.com/barrioquatro2021" target="_blank">Instagram</a>
-    <a href="mailto:barrioquatro2021@gmail.com" target="_blank">E-Mail</a>
+    <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
   </div>
 </footer>
 </body>
-
 </html>
+    

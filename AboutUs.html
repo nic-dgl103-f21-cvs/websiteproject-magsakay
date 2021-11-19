@@ -22,30 +22,172 @@
 </nav>
 </header>
 
-<main>
-<h1>ABOUT US</h1>
-<article>
-  <figure><img src="images/barrioentrance.jpg" alt="Barrio's Entrance" width="50%"/></figure>
-  <p>Barrio Quatro Food and Beverage House opens on first quarter of 2021, it is started during this pandemic when the shutdown has been declared and no employment on this period.
-  Everyone is at home and here, Padilla family decided to put a business which will provide community comfort and satisfied cravings within the barangay.
-  </p>
-  <figure><img src="images/mame.jpg" alt="Esperanza Padilla" width="50%"/></figure>
-  <p>Barrio Quatro is managed by Esperanza Padilla which cooking is her passion. </p>
-  <figure><img src="images/barrioteam.jpg" alt="Barrio's Team Member" width="50%"/></figure>
-  <p>Meet Our Team (from left to right: Leian, Katrina, Alvin, Sandra, Argel, Hannah & Chrislyn). </p>
-</article>
+
+
+
+
+
+
+
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  </style>
+ 
+  <main class="AboutUs-main">
+    <h1>ABOUT US</h1>
+    <article>
+      <figure><img src="images/barrioentrance.jpg" alt="Barrio's Entrance" width="50%"/></figure>
+      <p>Barrio Quatro Food and Beverage House opens on first quarter of 2021, it is started during this pandemic when the shutdown has been declared and no employment on this period.
+      Everyone is at home and here, Padilla family decided to put a business which will provide community comfort and satisfied cravings within the barangay.
+      </p>
+    </article>
+  </main>
+
+  <body>
+  
+  <h2>Responsive "Meet The Team" Section</h2>
+ 
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/mame.jpg" alt="Elsie" style="width:100%">
+        <div class="container">
+          <h2>Esperanza Padilla</h2>
+          <p class="title">Owner</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>esperanzapadilla@yahoo.com</p>
+          <p><a href="https://www.facebook.com/messages/t/100001690055729" target="_blank" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/kat" alt="Katrina" style="width:100%">
+        <div class="container">
+          <h2>Ma. Katrina Magsakay</h2>
+          <p class="title">Art Director</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>katrinapadilla28@gmail.com</p>
+          <p><a href="https://www.facebook.com/messages/t/100000229845107" target="_blank" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="images/leian" alt="Leian Kenneth" style="width:100%">
+        <div class="container">
+          <h2>Leian Kenneth Magsakay</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>mleiankenneth@gmail.com</p>
+          <p><a href="https://www.facebook.com/messages/t/100001208043095" target="_blank" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+ 
+
+  <div class="column">
+    <div class="card">
+      <img src="images/alvin" alt="Alvin" style="width:100%">
+      <div class="container">
+        <h2>Alvin Padilla</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>alvinpadilla@gmail.com</p>
+        <p><a href="https://www.facebook.com/messages/t/100000392986428" target="_blank" class="button">Contact</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/sandra" alt="Sandralyn" style="width:100%">
+      <div class="container">
+        <h2>Sandralyn Padilla</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>sandradeluna@gmail.com</p>
+        <p><a href="https://www.facebook.com/messages/t/115093883217472" target="_blank" class="button">Contact</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<aside class="aside">
+  <a class="rsv" href="ContactUs.html">Make a Reservation</a>
+</aside>
 </main>
 
 <footer>
-  <div class="footer-div">
-    <a href="ContactUs.html">Make a Reservation</a>
+<div class="footer-div">
+<h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
 
-    <h4>— Barrio Quatro Food and Beverage House —</h4>
-
-    <a href="https://www.facebook.com/barrioquatro2021" target="_blank">Facebook</a>
-    <a href="https://instagram.com/barrioquatro2021" target="_blank">Instagram</a>
-    <a href="mailto:barrioquatro2021@gmail.com" target="_blank">E-Mail</a>
-  </div>
+  <a href="https://www.facebook.com/barrioquatro2021" target="_blank">Facebook</a>
+  <a href="https://instagram.com/barrioquatro2021" target="_blank">Instagram</a>
+  <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
+</div>
 </footer>
   
 </body>
