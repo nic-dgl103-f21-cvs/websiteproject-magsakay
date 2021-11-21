@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="Home-body">
 
 <header class="Home-header">
   <a href="Home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
@@ -17,83 +17,177 @@
   <div class="Home-div">
     <a href="Home.html">Home</a>
     <a href="ContactUs.html">Contact Us</a>
-    <a href="AboutUs.html">About Us</a>
+    <a href="AboutUs.html">About Us</a> 
   </div>
 </nav>
 </header>
 
+
+<style>
+.Drink-main{
+  max-width: 1000px;
+  margin: auto;
+}
+.Drink-h1{
+  text-align: center;
+}
+.Drink-row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.Drink-row,
+.Drink-row > .Drink-column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+.Drink-column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.Drink-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.Drink-content {
+  background-color: rgb(255, 217, 0);
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.Drink-show {
+  display: block;
+}
+/* Style the buttons */
+.Drink-btn {
+  font-family: 'Space Mono', monospace;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.Drink-btn:hover {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-btn.active {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+</style>
+
+
+<!-- MAIN (Center website) -->
 <main class="Drink-main">
-<h1>"Get Refreshed"</h1>
 
-<h2>Flavored Milk Shake with Pearl</h2>
-<h3>Small - ₱15.00 &nbsp; Medium - ₱25.00 &nbsp; Large - ₱35.00 </h3>
-<h4>Flavors:</h4>
-  <ul>
-    <li>
-      <figure><img src="images/blackforest.jpg" alt="Black Forest" width="30%"/>
-      <figcaption>Black Forest</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/choco.jpg" alt="Choco Kisses" width="30%"/>
-      <figcaption>Choco Kisses</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/cookies.jpg" alt="Cookies & Cream" width="30%"/>
-      <figcaption>Cookies & Cream</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/avocado.jpg" alt="Avocado" width="30%"/>
-      <figcaption>Avocado</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/buko.jpg" alt="Buko Pandan" width="30%"/>
-      <figcaption>Buko Pandan</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/mango.jpg" alt="Mango" width="30%"/>
-      <figcaption>Mango</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/strawberry.jpg" alt="Strawberry" width="30%"/>
-      <figcaption>Strawberry</figcaption>
-      </figure> 
-    </li>
-  </ul>
+<h1 class="Drink-h1">DRINK</h1>
+<hr color="rgb(194, 88, 2)">
 
-<h2>Fresh Fruit Shake</h2>
-<h3>22oz for ₱79.00</h3>
-<h4>Flavors:</h4>
-  <ul>
-    <li>
-      <figure><img src="images/favocado.jpg" alt="Avocado" width="30%"/>
-      <figcaption>Avocado</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/fmango.jpg" alt="Mango" width="30%"/>
-      <figcaption>Mango</figcaption>
-      </figure> 
-    </li>
-    <li>
-      <figure><img src="images/fstrawberry.jpg" alt="Strawberry" width="30%"/>
-      <figcaption>Strawberry</figcaption>
-      </figure> 
-      </li>
-  </ul>
+<h2>"Local Street Foods and Comfort Foods"</h2>
 
-<h2>Halo-Halo</h2>
-  <figure>
-  <img src="images/halo.jpg" alt="Halo-Halo" width="30%"/>
-  <figcaption>Halo-Halo<br>₱30.00</figcaption>
-  </figure> 
+<nav id="DrinkmyBtnContainer">
+  <button class="Drink-btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="Drink-btn" onclick="filterSelection('fresh')"> Fresh Fruit Shake</button>
+  <button class="Drink-btn" onclick="filterSelection('flavored')"> Flavored Milk Shake with Pearl</button>
+  <button class="Drink-btn" onclick="filterSelection('coolers')"> Coolers</button>
+</nav>
 
-  <aside class="aside">
+<!-- Portfolio Gallery Grid -->
+<article class="Drink-row">
+  <div class="Drink-column fresh">
+    <div class="Drink-content">
+      <img src="images/favocado.jpg" alt="Fresh Avocado" style="width:100%">
+      <h3>Fresh Avocado</h3>
+      <p>22oz - ₱79.00</p>
+    </div>
+  </div>
+  <div class="Drink-column fresh">
+    <div class="Drink-content">
+    <img src="images/fmango.jpg" alt="Fresh Mango" style="width:100%">
+      <h3>Fresh Mango</h3>
+      <p>22oz - ₱79.00</p>
+    </div>
+  </div>
+  <div class="Drink-column fresh">
+    <div class="Drink-content">
+    <img src="images/fstrawberry.jpg" alt="Fresh Strawberry" style="width:100%">
+      <h3>Fresh Strawberry</h3>
+      <p>22oz - ₱79.00</p>
+    </div>
+  </div>
+
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+      <img src="images/blackforest.jpg" alt="Black Forest" style="width:100%">
+      <h3>Black Forest</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+    <img src="images/choco.jpg" alt="Choco Kisses" style="width:100%">
+      <h3>Choco Kisses</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+    <img src="images/cookies.jpg" alt="Cookies & Cream" style="width:100%">
+      <h3>Cookies & Cream</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+      <img src="images/avocado.jpg" alt="Avocado" style="width:100%">
+      <h3>Avocado</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+    <img src="images/buko.jpg" alt="Buko Pandan" style="width:100%">
+      <h3>Buko Pandan</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+    <img src="images/mango.jpg" alt="Mango" style="width:100%">
+      <h3>Mango</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+  <div class="Drink-column flavored">
+    <div class="Drink-content">
+    <img src="images/strawberry.jpg" alt="Strawberry" style="width:100%">
+      <h3>Strawberry</h3>
+      <p>8oz - ₱15.00<br>16oz - ₱25.00<br>22oz - ₱35.00</p>
+    </div>
+  </div>
+
+  <div class="Drink-column coolers">
+    <div class="Drink-content">
+    <img src="images/halo.jpg" alt="Halo - Halo" style="width:100%">
+      <h3>Halo - Halo</h3>
+      <p>16oz - ₱30.00</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</article>
+<!-- END MAIN -->
+
+
+<aside class="aside">
     <a class="rsv" href="ContactUs.html">Make a Reservation</a>
   </aside>
 </main>
@@ -107,7 +201,50 @@
     <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
   </div>
 </footer>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("Drink-column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "Drink-show ");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "Drink-show ");
+    }
+  }
   
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("DrinkmyBtnContainer");
+  var btns = btnContainer.getElementsByClassName("Drink-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
 </body>
-  
 </html>
+    

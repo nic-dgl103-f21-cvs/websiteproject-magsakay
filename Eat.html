@@ -22,214 +22,296 @@
 </nav>
 </header>
 
-<style>
-.Eat-main .menu{
-  display: flex;
-}
-.Eat-figure {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-}
-.Eat-image {
-  padding-right: 20px;
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.Eat-overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(194, 88, 2); /* Black see-through */
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: rgb(255, 217, 0);
-  font-size: 15px;
-  padding: 10px;
-  text-align: center;
-}
-.Eat-figure:hover .Eat-overlay {
-  opacity: 1;
-}
-</style>
-
+<!-- MAIN (Center website) -->
 <main class="Eat-main">
-<h1 class="Eat-h1">"Local Street Foods and Comfort Foods"</h1>
 
-<h2>Barrio's Platter</h2>
-<article class="menu">
-  <figure class="Eat-figure">
-    <img src="images/barkada.jpg" alt="Barkada Platter" class="Eat-image">
-    <div class="Eat-overlay">Barkada Platter <br> 3-4 Persons — ₱179.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/pamilya.jpg" alt="Pamilya Platter" class="Eat-image">
-    <div class="Eat-overlay">Pamilya Platter <br> 5-6 Persons — ₱249.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/jowa.jpg" alt="Jowa Platter" class="Eat-image">
-    <div class="Eat-overlay">Jowa Platter — ₱299.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/ihaw.jpg" alt="Ihaw-Ihaw Platter" class="Eat-image">
-    <div class="Eat-overlay">Ihaw-Ihaw Platter — ₱369.00/stick</div>
-  </figure>
+<h1 class="Eat-h1">EAT</h1>
+<hr color="rgb(194, 88, 2)">
+
+<h2>"Local Street Foods and Comfort Foods"</h2>
+
+<nav id="EatmyBtnContainer">
+  <button class="Eat-btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="Eat-btn" onclick="filterSelection('platter')"> Barrio's Platter</button>
+  <button class="Eat-btn" onclick="filterSelection('soup')"> Soup</button>
+  <button class="Eat-btn" onclick="filterSelection('made')"> Made to Order</button>
+  <button class="Eat-btn" onclick="filterSelection('chicken')"> Barrio's Chicken</button>
+  <button class="Eat-btn" onclick="filterSelection('fried')"> Fried Street Foods</button>
+  <button class="Eat-btn" onclick="filterSelection('grilled')"> Grilled Street Foods</button>
+</nav>
+
+<!-- Portfolio Gallery Grid -->
+<article class="Eat-row">
+  <div class="Eat-column platter">
+    <div class="Eat-content">
+      <img src="images/barkada.jpg" alt="Barkada Platter" style="width:100%">
+      <h3>Barkada Platter</h3>
+      <p>3-4 Persons — ₱179.00</p>
+    </div>
+  </div>
+  <div class="Eat-column platter">
+    <div class="Eat-content">
+    <img src="images/pamilya.jpg" alt="Pamilya Platter" style="width:100%">
+      <h3>Pamilya Platter</h3>
+      <p>5-6 Persons — ₱249.00</p>
+    </div>
+  </div>
+  <div class="Eat-column platter">
+    <div class="Eat-content">
+    <img src="images/jowa.jpg" alt="Jowa Platter" style="width:100%">
+      <h3>Jowa Platter</h3>
+      <p>₱299.00</p>
+    </div>
+  </div>
+  <div class="Eat-column platter">
+    <div class="Eat-content">
+    <img src="images/ihaw.jpg" alt="Ihaw - Ihaw Platter" style="width:100%">
+      <h3>Ihaw - Ihaw Platter</h3>
+      <p>₱369.00</p>
+    </div>
+  </div>
+  
+  <div class="Eat-column soup">
+    <div class="Eat-content">
+      <img src="images/gotoegg.jpg" alt="Goto with Egg" style="width:100%">
+      <h3>Goto with Egg</h3>
+      <p>₱45.00</p>
+    </div>
+  </div>
+  <div class="Eat-column soup">
+    <div class="Eat-content">
+    <img src="images/gotospecial.jpg" alt="Goto Special" style="width:100%">
+      <h3>Goto Special</h3>
+      <p>₱50.00</p>
+    </div>
+  </div>
+  <div class="Eat-column soup">
+    <div class="Eat-content">
+    <img src="images/paresrice.jpg" alt="Pares Rice" style="width:100%">
+      <h3>Pares Rice</h3>
+      <p>₱55.00</p>
+    </div>
+  </div>
+  <div class="Eat-column soup">
+    <div class="Eat-content">
+    <img src="images/paresmami.jpg" alt="Pares Mami" style="width:100%">
+      <h3>Pares Mami</h3>
+      <p>₱55.00</p>
+    </div>
+  </div>
+  <div class="Eat-column soup">
+    <div class="Eat-content">
+    <img src="images/papaitan.jpg" alt="Papaitan with Rice" style="width:100%">
+      <h3>Papaitan with Rice</h3>
+      <p>₱60.00</p>
+    </div>
+  </div>
+
+  <div class="Eat-column made">
+    <div class="Eat-content">
+      <img src="images/pansit.jpg" alt="Pancit" style="width:100%">
+      <h3>Pancit</h3>
+      <p>₱349.00 - ₱599.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+      <img src="images/palabok.jpg" alt="Palabok" style="width:100%">
+      <h3>Palabok</h3>
+      <p>₱349.00 - ₱599.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+    <img src="images/shanghai.jpg" alt="Lumpiang Shanghai" style="width:100%">
+      <h3>Lumpiang Shanghai</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+      <img src="images/sisig.jpg" alt="Sisig" style="width:100%">
+      <h3>Sisig</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+    <img src="images/dinakdakan.jpg" alt="Dinakdakan" style="width:100%">
+      <h3>Dinakdakan</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+    <img src="images/chickenplatter.jpg" alt="Chicken Wings Platter" style="width:100%">
+      <h3>Chicken Wings Platter</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+    <img src="images/menudo.jpg" alt="Menudo" style="width:100%">
+      <h3>Menudo</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+  <div class="Eat-column made">
+    <div class="Eat-content">
+      <img src="images/kare.jpg" alt="Kare - Kare" style="width:100%">
+      <h3>Kare - Kare</h3>
+      <p>₱499.00</p>
+    </div>
+  </div>
+ 
+  <div class="Eat-column chicken">
+    <div class="Eat-content">
+    <img src="images/originalfeet.jpg" alt="Original Chicken Feet" style="width:100%">
+      <h3>Original Chicken Feet</h3>
+      <p>₱69.00 / 10pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column chicken">
+    <div class="Eat-content">
+    <img src="images/flavoredfeet.jpg" alt="Flavored Chicken Feet" style="width:100%">
+      <h3>Flavored Chicken Feet</h3>
+      <p>₱84.00 / 10pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column chicken">
+    <div class="Eat-content">
+    <img src="images/chickenbbq.jpg" alt="Chicken Barbeque" style="width:100%">
+      <h3>Chicken Barbeque</h3>
+      <p>₱25.00 / pc</p>
+    </div>
+  </div>
+  <div class="Eat-column chicken">
+    <div class="Eat-content">
+    <img src="images/chickenpotato.jpg" alt="Chicken Potato" style="width:100%">
+      <h3>Chicken Potato</h3>
+      <p>₱20.00 / pc</p>
+    </div>
+  </div>
+  <div class="Eat-column chicken">
+    <div class="Eat-content">
+      <img src="images/wings.jpg" alt="Chicken Wings: Buffalo, Sweet Chili, Teriyaki" style="width:100%">
+      <h3>Chicken Wings: Buffalo, Sweet Chili, Teriyaki</h3>
+      <p>₱100.00 / 5pcs</p>
+    </div>
+  </div>
+
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/fishball.jpg" alt="Fishball" style="width:100%">
+      <h3>Fishball</h3>
+      <p>₱10.00 / 12pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/squidball.jpg" alt="Squidball" style="width:100%">
+      <h3>Squidball</h3>
+      <p>₱10.00 / 4pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/kikiam.jpg" alt="Kikiam" style="width:100%">
+      <h3>Kikiam</h3>
+      <p>₱10.00 / 4pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/siomai.jpg" alt="Siomai" style="width:100%">
+      <h3>Siomai</h3>
+      <p>₱10.00 / 3pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/dynamite.jpg" alt="Dynamite" style="width:100%">
+      <h3>Dynamite</h3>
+      <p>₱7.00 / pc</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/cheesestick.jpg" alt="Cheese Stick" style="width:100%">
+      <h3>Cheese Stick</h3>
+      <p>₱10.00 / 7pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/fries.jpg" alt="Fries" style="width:100%">
+      <h3>Fries: Cheese, Barbeque, Sour Cream</h3>
+      <p>₱20.00 / 10g</p>
+    </div>
+  </div>
+  <div class="Eat-column fried">
+    <div class="Eat-content">
+    <img src="images/kwek.jpg" alt="Kwek - Kwek" style="width:100%">
+      <h3>Kwek - Kwek</h3>
+      <p>₱20.00 / 4pcs</p>
+    </div>
+  </div>
+
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/isaw.jpg" alt="Chicken Isaw" style="width:100%">
+      <h3>Chicken Isaw</h3>
+      <p>₱10.00 / stick</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/betamax.jpg" alt="Betamax" style="width:100%">
+      <h3>Betamax</h3>
+      <p>₱10.00 / stick</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/hotdog.jpg" alt="Hotdog" style="width:100%">
+      <h3>Retro</h3>
+      <p>₱12.00 / stick</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/bbq.jpg" alt="Barbeque" style="width:100%">
+      <h3>Barbeque</h3>
+      <p>₱20.00 / stick</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/balingit.jpg" alt="Balingit" style="width:100%">
+      <h3>Balingit</h3>
+      <p>₱20.00 / stick</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/dayold.jpg" alt="Day Old" style="width:100%">
+      <h3>Retro</h3>
+      <p>₱15.00 / 2pcs</p>
+    </div>
+  </div>
+  <div class="Eat-column grilled">
+    <div class="Eat-content">
+    <img src="images/orangeegg.jpg" alt="Orange Egg" style="width:100%">
+      <h3>Retro</h3>
+      <p>₱15.00 / 2pcs</p>
+    </div>
+  </div>
+<!-- END GRID -->
 </article>
+<!-- END MAIN -->
 
-<h2>Made to Order</h2>
-<article class="menu">
-  <figure class="Eat-figure">
-    <img src="images/pansit.jpg" alt="Pansit" class="Eat-image">
-    <div class="Eat-overlay">Pansit — ₱349.00-599.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/palabok.jpg" alt="Palabok" class="Eat-image">
-    <div class="Eat-overlay">Palabok — ₱349.00-599.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/shanghai.jpg" alt="Lumpiang Shanghai" class="Eat-image">
-    <div class="Eat-overlay">Lumpiang Shanghai — ₱499.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/sisig.jpg" alt="Sisig" class="Eat-image">
-    <div class="Eat-overlay">Sisig — ₱499.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/dinakdakan.jpg" alt="Dinakdakan" class="Eat-image">
-    <div class="Eat-overlay">Dinakdakan — ₱499.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/menudo.jpg" alt="Menudo" class="Eat-image">
-    <div class="Eat-overlay">Menudo — ₱499.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/kare.jpg" alt="Kare-Kare" class="Eat-image">
-    <div class="Eat-overlay">Kare-Kare — ₱499.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/chickenplatter.jpg" alt="Chicken Platter" class="Eat-image">
-    <div class="Eat-overlay">Chicken Platter — ₱499.00</div>
-  </figure>
-  </article>
 
-<h2>Soup</h2>
-<article class="menu">
-  <figure class="Eat-figure">
-    <img src="images/gotoegg.jpg" alt="Goto with Egg" class="Eat-image">
-    <div class="Eat-overlay">Goto with Egg — ₱45.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/gotospecial.jpg" alt="Goto Special" class="Eat-image">
-    <div class="Eat-overlay">Goto Special — ₱50.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/paresrice.jpg" alt="Pares Rice" class="Eat-image">
-    <div class="Eat-overlay">Pares Rice — ₱55.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/paresmami.jpg" alt="Pares Mami" class="Eat-image">
-    <div class="Eat-overlay">Pares Mami — ₱55.00</div>
-  </figure>
-  <figure class="Eat-figure">
-    <img src="images/papaitan.jpg" alt="Papaitan with Rice" class="Eat-image">
-    <div class="Eat-overlay">Papaitan with Rice — ₱60.00</div>
-  </figure>
-</article>
-
-<h2>Barrio's Chicken</h2>
-<article class="menu">
-    <figure class="Eat-figure">
-      <img src="images/wings.jpg" alt="Goto with Egg" class="Eat-image">
-      <div class="Eat-overlay">Chicken Wings: Buffalo, Sweet Chili, Teriyaki — ₱100.00/5pcs</div>
-    </figure>
-    <figure class="Eat-figure">
-      <img src="images/originalfeet.jpg" alt="Original Chicken Feet" class="Eat-image">
-      <div class="Eat-overlay">Original Chicken Feet — ₱69.00/10pcs</div>
-    </figure>
-    <figure class="Eat-figure">
-      <img src="images/flavoredfeet.jpg" alt="Flavored Chicken Feet" class="Eat-image">
-      <div class="Eat-overlay">Flavored Chicken Feet — ₱84.00/10pcs</div>
-    </figure>
-    <figure class="Eat-figure">
-      <img src="images/chickenpotato.jpg" alt="Chicken Potato" class="Eat-image">
-      <div class="Eat-overlay">Chicken Potato — ₱25.00/pc</div>
-    </figure>
-    <figure class="Eat-figure">
-      <img src="images/chickenbbq.jpg" alt="Chicken Barbeque" class="Eat-image">
-      <div class="Eat-overlay">Chicken Barbeque — ₱60.00/pc</div>
-    </figure>
-  </article>
-
-  <h2>Fried Street Foods</h2>
-  <article class="menu">
-    <figure class="Eat-figure">
-      <img src="images/dynamite.jpg" alt="Dynamite" class="Eat-image">
-      <div class="Eat-overlay">Dynamite — ₱7.00/pc</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/fishball.jpg" alt="Fishball" class="Eat-image">
-        <div class="Eat-overlay">Fishball — ₱10.00</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/squidball.jpg" alt="Squidball" class="Eat-image">
-        <div class="Eat-overlay">Squidball — ₱10.00</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/Kikiam.jpg" alt="Kikiam" class="Eat-image">
-        <div class="Eat-overlay">Kikiam — ₱10.00</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/siomai.jpg" alt="Siomai" class="Eat-image">
-        <div class="Eat-overlay">Siomai — ₱10.00</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/cheesestick.jpg" alt="cheese Stick" class="Eat-image">
-        <div class="Eat-overlay">Cheese Stick — ₱10.00</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/fries.jpg" alt="Fries" class="Eat-image">
-        <div class="Eat-overlay">Fries — ₱20.00/10g</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/kwek.jpg" alt="Kwek-Kwek" class="Eat-image">
-        <div class="Eat-overlay">Kwek-Kwek — ₱20.00/4pcs</div>
-    </figure>
-  </article>
-
-  <h2>Grilled Street Foods</h2>
-  <article class="menu">
-    <figure class="Eat-figure">
-      <img src="images/isaw.jpg" alt="Isaw ng Manok" class="Eat-image">
-      <div class="Eat-overlay">Isaw ng Manok — ₱10.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/betamax.jpg" alt="Betamax" class="Eat-image">
-        <div class="Eat-overlay">Betamax — ₱5.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/hotdog.jpg" alt="Hotdog" class="Eat-image">
-        <div class="Eat-overlay">Hotdog — ₱12.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/bbq.jpg" alt="Barbeque" class="Eat-image">
-        <div class="Eat-overlay">Barbeque — ₱20.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/balingit.jpg" alt="Balingit" class="Eat-image">
-        <div class="Eat-overlay">Balingit — ₱20.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/dayold.jpg" alt="Day Old" class="Eat-image">
-        <div class="Eat-overlay">Day Old — ₱15.00/stick</div>
-    </figure>
-    <figure class="Eat-figure">
-        <img src="images/orangeegg.jpg" alt="Orange Egg" class="Eat-image">
-        <div class="Eat-overlay">Orange Egg — ₱15.00/stick</div>
-    </figure>
-  </article>
-
-  <aside class="aside">
+<aside class="aside">
     <a class="rsv" href="ContactUs.html">Make a Reservation</a>
   </aside>
 </main>
@@ -243,6 +325,50 @@
     <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
   </div>
 </footer>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("Eat-column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "Eat-show ");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "Eat-show ");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("EatmyBtnContainer");
+  var btns = btnContainer.getElementsByClassName("Eat-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
 </body>
 </html>
     
