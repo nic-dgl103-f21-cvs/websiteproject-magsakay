@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="Home-body">
 
 <header class="Home-header">
   <a href="Home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
@@ -23,35 +23,88 @@
 </header>
 
 <main class="Absorb-main">
-<h1>"Barrio Feels Dining Area"</h1>
-<ul>
-  <li>
-    <figure><img src="images/barriosign.jpg" alt="Barrio's Signage" width="50%"/>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/barrioway.jpg" alt="Barrio's Way" width="50%"/>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/barrioside.jpg" alt="Barrio's Side Dining" width="50%"/>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/barrioback.jpg" alt="Barrio's back Dining" width="50%"/>
-    </figure> 
-  </li>
-  <li>
-    <figure><img src="images/barrioback1.jpg" alt="Barrio's back Dining" width="50%"/>
-    </figure> 
-  </li>
-</ul>
-<p>Dine with us and satisfy your cravings.</p>
- <!--ADD VIDEO CLIP-->
- <aside class="aside">
+
+<h1>ABSORB</h1>
+<hr>
+
+<h2>"Dine with us and satisfy your cravings."</h2>
+  
+<article class="Absorb-container">
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">1 / 6</div>
+    <img src="images/barriosign.jpg" style="width:100%">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">2 / 6</div>
+    <img src="images/barrioentrance.jpg" style="width:100%">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">3 / 6</div>
+    <img src="images/barrioside.jpg" style="width:100%">
+  </div>
+      
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">4 / 6</div>
+    <img src="images/barrioback.jpg" style="width:100%">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">5 / 6</div>
+    <img src="images/barrioback1.jpg" style="width:100%">
+  </div>
+      
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">6 / 6</div>
+    <img src="images/barriopermit.jpg" style="width:100%">
+  </div>
+      
+  <a class="Absorb-prev" onclick="plusSlides(-1)">❮</a>
+  <a class="Absorb-next" onclick="plusSlides(1)">❯</a>
+  
+  <div class="caption-container">
+    <p id="Absorb-caption"></p>
+  </div>
+  
+  <div class="Absorb-row">
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barriosign.jpg" style="width:100%" onclick="currentSlide(1)" alt="Barrio's Signage">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barrioentrance.jpg" style="width:100%" onclick="currentSlide(2)" alt="Barrio's Waiting Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barrioside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Barrio's Garden Side Dinning Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barrioback.jpg" style="width:100%" onclick="currentSlide(4)" alt="Barrio's Kubo Side Dinning Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barrioback1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Barrio's Garden Side Dinning Area (Close-up)">
+    </div>    
+    <div class="Absorb-column">
+      <img class="Absorb-demo Absorb-cursor" src="images/barriopermit.jpg" style="width:100%" onclick="currentSlide(6)" alt="Barrio's Business Permit">
+    </div>
+  </div>
+</article>
+
+<article class="Absorb-video">
+  <h2>This is how we enjoy at Barrio Quatro</h2>
+  <div class="video">
+    <video class="video" width="40%" height="10%" controls>
+    <source src="videos/welcome1.mp4" type="video/mp4">
+    </video>
+    <video class="video" width="40%" height="10%" controls>
+    <source src="videos/welcome.mp4" type="video/mp4">
+    </video>
+ </div>
+</article>
+
+<aside class="aside">
   <a class="rsv" href="ContactUs.html">Make a Reservation</a>
 </aside>
-</main>
+</main> 
 
 <footer>
 <div class="footer-div">
@@ -62,7 +115,34 @@
   <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
 </div>
 </footer>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
   
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("Absorb-mySlides");
+    var dots = document.getElementsByClassName("Absorb-demo");
+    var captionText = document.getElementById("Absorb-caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
 </body>
-  
 </html>

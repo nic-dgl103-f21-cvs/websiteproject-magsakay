@@ -6,6 +6,9 @@ body{
   font-family: 'Space Mono', monospace;
   color: rgb(194, 88, 2);
 }
+h1{
+  text-align: center;
+}
 .Home-body{
   margin: 0;
 }
@@ -96,13 +99,13 @@ footer div{
   padding-bottom: 50px;
 }
 .Home-video h1{
-  color: rgb(194, 88, 2);
-  padding-left: 10px;
+  text-align: left;
+  padding-left: 90px;
   padding-bottom: 30px;
 }
 .Home-video .video{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .Home-main .aside a:hover { 
   background-color:rgb(194, 88, 2);
@@ -117,9 +120,6 @@ footer div{
 .Eat-main{
   max-width: 1000px;
   margin: auto;
-}
-.Eat-h1{
-  text-align: center;
 }
 .Eat-row {
   margin: 10px -16px;
@@ -174,3 +174,158 @@ footer div{
   color: rgb(255, 217, 0);
 }
 /* END: CODE FOR EAT */
+
+
+
+/* START: CODE FOR DRINK */
+.Drink-main{
+  max-width: 1000px;
+  margin: auto;
+}
+.Drink-row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.Drink-row,
+.Drink-row > .Drink-column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+.Drink-column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.Drink-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.Drink-content {
+  background-color: rgb(255, 217, 0);
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.Drink-show {
+  display: block;
+}
+/* Style the buttons */
+.Drink-btn {
+  font-family: 'Space Mono', monospace;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.Drink-btn:hover {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-btn.active {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/* END: CODE FOR EAT */
+
+
+
+/* START: CODE FOR ABSORB */
+img {
+  vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.Absorb-container {
+  position: relative;
+}
+/* Hide the images by default */
+.Absorb-mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.Absorb-cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.Absorb-prev, .Absorb-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.Absorb-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.Absorb-prev:hover,
+.Absorb-next:hover {
+  background-color: rgb(255, 217, 0);
+}
+/* Number text (1/3 etc) */
+.Absorb-numbertext {
+  color: rgb(255, 217, 0);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image text */
+.caption-container {
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 217, 0);
+  padding: 2px 16px;
+}
+.Absorb-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.Absorb-column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.Absorb-demo {
+  opacity: 0.6;
+}
+.active, .Absorb-demo:hover {
+  opacity: 5;
+}
+.Absorb-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/* CSS for Absorb Videos*/
+.Absorb-video{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Absorb-video h2{
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.Absorb-video .video{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* END: CODE FOR ABSORB */
