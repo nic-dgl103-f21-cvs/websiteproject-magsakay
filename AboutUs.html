@@ -7,29 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/logo.JPG" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-<header class="Home-header">
-  <a href="Home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
-<nav class="Home-nav">
-  <div class="Home-div">
-    <a href="Home.html">Home</a>
-    <a href="ContactUs.html">Contact Us</a>
-    <a href="AboutUs.html">About Us</a>
-  </div>
-</nav>
-</header>
-
-
-
-
-
-
-
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   html {
     box-sizing: border-box;
@@ -39,141 +17,127 @@
     box-sizing: inherit;
   }
   
-  .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    text-decoration: none;
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  </style>
- 
-  <main class="AboutUs-main">
-    <h1>ABOUT US</h1>
-    <article>
-      <figure><img src="images/barrioentrance.jpg" alt="Barrio's Entrance" width="50%"/></figure>
-      <p>Barrio Quatro Food and Beverage House opens on first quarter of 2021, it is started during this pandemic when the shutdown has been declared and no employment on this period.
-      Everyone is at home and here, Padilla family decided to put a business which will provide community comfort and satisfied cravings within the barangay.
-      </p>
-    </article>
-  </main>
+</style>
+</head>
 
-  <body>
+<body>
+
+<header class="Home-header">
+  <a href="Home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
+<nav class="Home-nav">
+  <div class="Home-div">
+    <a href="OrderNow.html">Order Now</a>
+    <a href="Home.html">Home</a>
+    <a href="ContactUs.html">Contact Us</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+  </div>
+</nav>
+</header>
+
+<main class="AboutUs-main">
+  <h1>ABOUT US</h1>
+  <div class="about-div">
+    <p><b>Barrio Quatro Food and Beverage House</b> opens on first quarter of 2021, it is started during this pandemic when the shutdown has been declared and no employment on this period.
+      Everyone is at home and here, Padilla family decided to put a business which will provide community comfort and satisfied cravings within the barangay.</p>
+      <figure><img src="images/barrioentrance.jpg" alt="Barrio's Entrance" width="800"/></figure>
+    </div>
   
-  <h2>Responsive "Meet The Team" Section</h2>
+  <h2>"Meet The Team"</h2>
  
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/mame.jpg" alt="Elsie" style="width:100%">
-        <div class="container">
+  <div class="about-row">
+    <div class="about-column">
+      <div class="about-card">
+        <img src="images/mame.jpg" alt="elsie" style="width:100%">
+        <div class="about-container">
           <h2>Esperanza Padilla</h2>
-          <p class="title">Owner</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="about-title">Owner</p>
           <p>esperanzapadilla@yahoo.com</p>
-          <p><a href="https://www.facebook.com/messages/t/100001690055729" target="_blank" class="button">Contact</a></p>
+          <p><a href="https://www.facebook.com/messages/t/100001690055729" target="_blank" class="about-button">Contact</a></p>
         </div>
       </div>
     </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/kat" alt="Katrina" style="width:100%">
-        <div class="container">
+    <div class="about-column">
+      <div class="about-card">
+        <img src="images/kat.jpg" alt="Kat" style="width:100%">
+        <div class="about-container">
           <h2>Ma. Katrina Magsakay</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="about-title">Manager</p>
           <p>katrinapadilla28@gmail.com</p>
-          <p><a href="https://www.facebook.com/messages/t/100000229845107" target="_blank" class="button">Contact</a></p>
+          <p><a href="https://www.facebook.com/messages/t/100000229845107" target="_blank" class="about-button">Contact</a></p>
         </div>
       </div>
     </div>
-    
-    <div class="column">
-      <div class="card">
-        <img src="images/leian" alt="Leian Kenneth" style="width:100%">
-        <div class="container">
+    <div class="about-column">
+      <div class="about-card">
+        <img src="images/leian.jpg" alt="Leian" style="width:100%">
+        <div class="about-container">
           <h2>Leian Kenneth Magsakay</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="about-title">Chef</p>
           <p>mleiankenneth@gmail.com</p>
-          <p><a href="https://www.facebook.com/messages/t/100001208043095" target="_blank" class="button">Contact</a></p>
+          <p><a href="https://www.facebook.com/messages/t/100001208043095" target="_blank" class="about-button">Contact</a></p>
         </div>
       </div>
     </div>
- 
-
-  <div class="column">
-    <div class="card">
-      <img src="images/alvin" alt="Alvin" style="width:100%">
-      <div class="container">
-        <h2>Alvin Padilla</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>alvinpadilla@gmail.com</p>
-        <p><a href="https://www.facebook.com/messages/t/100000392986428" target="_blank" class="button">Contact</a></p>
+    <div class="about-column">
+      <div class="about-card">
+        <img src="images/alvin.jpg" alt="Alvin" style="width:100%">
+        <div class="about-container">
+          <h2>Alvin Padilla</h2>
+          <p class="about-title">Chef</p>
+          <p></p>
+          <p>alvinpadilla@gmail.com</p>
+          <p><a href="https://www.facebook.com/messages/t/100000392986428" target="_blank" class="about-button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="about-column">
+      <div class="about-card">
+        <img src="images/sandra.jpg" alt="Sandralyn" style="width:100%">
+        <div class="about-container">
+          <h2>Sandralyn Padilla</h2>
+          <p class="about-title">Maketing Manager</p>
+          <p>sandradeluna@gmail.com</p>
+          <p><a href="https://www.facebook.com/messages/t/115093883217472" target="_blank" class="about-button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+  <div class="about-column">
+    <div class="about-card">
+      <img src="images/argel.jpg" alt="Argel" style="width:100%">
+      <div class="about-container">
+        <h2>Argel Simeon</h2>
+        <p class="about-title">Dining Staff</p>
+        <p>argelsimeon@gmail.com</p>
+        <p><a href="https://www.facebook.com/messages/t/100013089152532" target="_blank" class="about-button">Contact</a></p>
       </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="images/sandra" alt="Sandralyn" style="width:100%">
-      <div class="container">
-        <h2>Sandralyn Padilla</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>sandradeluna@gmail.com</p>
-        <p><a href="https://www.facebook.com/messages/t/115093883217472" target="_blank" class="button">Contact</a></p>
+  <div class="about-column">
+    <div class="about-card">
+      <img src="images/hannah.jpg" alt="Hannah" style="width:100%">
+      <div class="about-container">
+        <h2>Hannah Trinidad</h2>
+        <p class="about-title">Dining Staff</p>
+        <p>hannahtrinidad@gmail.com</p>
+        <p><a href="https://www.facebook.com/messages/t/100067682690168" target="_blank" class="about-button">Contact</a></p>
       </div>
     </div>
   </div>
-
+  <div class="about-column">
+    <div class="about-card">
+      <img src="images/celine.jpg" alt="Celine" style="width:100%">
+      <div class="about-container">
+        <h2>Crislyn Magno</h2>
+        <p class="about-title">Dining Staff</p>
+        <p>crislynmagno@gmail.com</p>
+        <p><a href="https://www.facebook.com/messages/t/100058427693092" target="_blank" class="about-button">Contact</a></p>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 
 <aside class="aside">
   <a class="rsv" href="ContactUs.html">Make a Reservation</a>
@@ -184,9 +148,9 @@
 <div class="footer-div">
 <h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
 
-  <a href="https://www.facebook.com/barrioquatro2021" target="_blank">Facebook</a>
-  <a href="https://instagram.com/barrioquatro2021" target="_blank">Instagram</a>
-  <a href="mailto://barrioquatro2021@gmail.com">E-Mail</a>
+<a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+<a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 </div>
 </footer>
   
