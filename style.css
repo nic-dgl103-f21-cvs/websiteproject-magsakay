@@ -1,4 +1,6 @@
-/* START: CODE FOR ALL PAGE */
+/*=========================== 
+START: CODE FOR ALL PAGE
+=========================== */
 * {
   box-sizing: border-box;
 }
@@ -59,11 +61,15 @@ footer div{
   text-decoration: none;
   color: rgb(255, 217, 0);
 }
-/* END: CODE FOR ALL PAGE */
+/*===========================  
+END: CODE FOR ALL PAGE 
+===========================*/
 
 
 
-/* START: CODE FOR HOME */
+/*=========================== 
+START: CODE FOR HOME 
+===========================*/
 .Home-main .main-nav a:hover{
   text-decoration:underline 3px;
 }
@@ -113,11 +119,15 @@ footer div{
   background-color:rgb(194, 88, 2);
   color: rgb(255, 217, 0);
 }
-/* END: CODE FOR HOME */
+/*===========================
+END: CODE FOR HOME
+===========================*/
 
 
 
-/* START: CODE FOR EAT */
+/*=========================== 
+START: CODE FOR EAT 
+===========================*/
 /* Center website */
 .eat-image{
   height: 300px;
@@ -180,11 +190,15 @@ footer div{
   background-color:rgb(194, 88, 2);
   color: rgb(255, 217, 0);
 }
-/* END: CODE FOR EAT */
+/*=========================== 
+END: CODE FOR EAT
+===========================*/
 
 
 
-/* START: CODE FOR DRINK */
+/*===========================
+START: CODE FOR DRINK
+===========================*/
 .drink-image{
   height: 300px;
   background-size: cover;
@@ -245,11 +259,15 @@ footer div{
   background-color:rgb(194, 88, 2);
   color: rgb(255, 217, 0);
 }
-/* END: CODE FOR EAT */
+/*=========================== 
+END: CODE FOR EAT
+===========================*/
 
 
 
-/* START: CODE FOR ABSORB */
+/*===========================  
+START: CODE FOR ABSORB 
+===========================*/
 .Absorb-main{
   max-width: 1000px;
   margin: auto;
@@ -349,11 +367,15 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
-/* END: CODE FOR ABSORB */
+/*===========================  
+END: CODE FOR ABSORB 
+===========================*/
 
 
 
-/* START: CODE FOR ABOUT US */
+/*=========================== 
+START: CODE FOR ABOUT US 
+===========================*/
 .about-div{
   display: flex;
   justify-content:end;
@@ -418,8 +440,14 @@ img {
   background-color:rgb(194, 88, 2);
   color: rgb(255, 217, 0);
 }
-/* END: CODE FOR ABOUT US */
+/*===========================
+END: CODE FOR ABOUT US
+===========================*/
 
+
+/*=========================== 
+START: CODE FOR CONTACT US 
+===========================*/
 .ContactUs-main{
   max-width: 1000px;
   margin: auto;
@@ -440,13 +468,107 @@ img {
 .ContactUs-main .aside{
   padding-top: 50px;
 }
+.contact{
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+  background-color:rgb(194, 88, 2);
+
+  border-radius: 5px;
+}
+.contact:hover{
+  color: rgb(194, 88, 2);
+  background-color:rgb(255, 217, 0);
+}
+/* =========================== 
+END: CODE FOR CONTACT US 
+===========================*/
 
 
+/* ===========================
+START: CODE FOR ORDER NOW
+===========================*/
 
 .OrderNow-main .aside{
   padding-top: 50px;
+}
+input[type="reset"] {
+  color: rgb(194, 88, 2);
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: rgb(194, 88, 2);
+  color: white;
+}
+input[type="submit"] {
+  background-color:rgb(194, 88, 2);
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(245, 136, 48);
+}
+/* STRUCTURE*/
+.wrapper-form {
+  border-radius: 5px;
+  background-color: rgb(253, 175, 112);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+/*FORM CONTROLS*/
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 200px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="contactno"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+select [id="mode"]{
+  font-family: sans-serif;
+}
+textarea {
+  font-family: sans-serif;
+}
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid rgb(245, 136, 48);;
+}
+.label-required {
+  font-size: 0.8rem;
+  color: red;
 }
 .OrderNow-main .aside a:hover { 
   background-color:rgb(194, 88, 2);
   color: rgb(255, 217, 0);
 }
+/*===========================
+END: CODE FOR ORDER NOW 
+===========================*/
