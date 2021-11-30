@@ -11,17 +11,20 @@
 </head>
 
 <body class="Home-body">
+  
 <header class="Home-header">
-  <a href="home.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
+  <a href="index.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
 <nav class="Home-nav">
   <div class="Home-div">
-    <a href="ordernow.html">Order Now</a>
-    <a href="home.html">Home</a>
-    <a href="contactus.html">Contact Us</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    <a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+  <ul id="nav-items">
+    <li><a href="ordernow.html">Order Now</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+    <li><a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>  
+  </ul>
   </div>
 </nav>
 </header>
@@ -36,11 +39,8 @@
   <article class="Home-video">
     <h1>Welcome to Barrio Quatro!</h1>
     <div class="video">
-      <video class="video" width="500" controls>
-      <source src="videos/welcome1.mp4" type="video/mp4">
-      </video>
-      <video class="video" width="500" controls>
-      <source src="videos/welcome.mp4" type="video/mp4">
+      <video class="video" controls>
+      <source src="videos/welcome1.mp4" width="500" type="video/mp4">
       </video>
     </div>
   </article>
@@ -76,6 +76,10 @@
     var element = document.getElementById("main-nav");
     element.classList.remove("eat-BG", "drink-BG", "absorb-BG");
   }
+  function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
 </script>
 </body>
 </html>

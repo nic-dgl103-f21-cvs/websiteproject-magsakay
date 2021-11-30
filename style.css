@@ -11,7 +11,6 @@ body{
 h1{
   color: rgb(136, 57, 4);
   text-align: center;
-  padding-bottom: 20px;
 }
 .Home-body{
   margin: 0;
@@ -19,10 +18,6 @@ h1{
 .Home-header {
   display: flex;
   justify-content: space-between;
-}
-.Home-nav{
-  padding-top: 2.5%;
-  padding-right: 2%;
 }
 .Home-nav .Home-div a:hover { 
   background-color:rgb(255, 217, 0);
@@ -65,8 +60,6 @@ footer div{
 END: CODE FOR ALL PAGE 
 ===========================*/
 
-
-
 /*=========================== 
 START: CODE FOR HOME 
 ===========================*/
@@ -81,6 +74,13 @@ START: CODE FOR HOME
   display: flex;
   justify-content: space-around;
   padding: 15px;
+}
+.Home-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  display: flex;
 }
 .eat-BG{
   background-image: url(images/gotospecial.jpg);
@@ -376,6 +376,12 @@ END: CODE FOR ABSORB
 /*=========================== 
 START: CODE FOR ABOUT US 
 ===========================*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .about-div{
   display: flex;
   justify-content:end;
@@ -478,6 +484,83 @@ START: CODE FOR CONTACT US
 .contact:hover{
   color: rgb(194, 88, 2);
   background-color:rgb(255, 217, 0);
+}
+input[type="reset"] {
+  color: rgb(194, 88, 2);
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: rgb(194, 88, 2);
+  color: white;
+}
+input[type="submit"] {
+  background-color:rgb(194, 88, 2);
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(245, 136, 48);
+}
+/* ===============
+   STRUCTURE
+   =============== */
+.wrapper-form {
+  border-radius: 5px;
+  background-color: rgb(253, 175, 112);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+/* ===============
+   FORM CONTROLS
+   =============== */
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 200px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(245, 136, 48);
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="contactno"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea {
+  font-family: sans-serif;
+}
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid rgb(245, 136, 48);;
+}
+.label-required {
+  font-size: 0.8rem;
+  color: red;
 }
 /* =========================== 
 END: CODE FOR CONTACT US 
