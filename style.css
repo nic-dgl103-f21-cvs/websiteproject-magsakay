@@ -68,7 +68,7 @@ START: CODE FOR HOME
   display: block;
 }
 .index-nav {
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -83,10 +83,11 @@ START: CODE FOR HOME
   display: flex;
 }
 .index-nav ul li a {
-  color:rgb(194, 88, 2);
+  display: inline-block;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px;
+  color: rgba(231, 93, 0, 0.726);
+  padding: 5px;
 }
 .index-nav ul li a:hover {
   background-color: rgb(255, 217, 0);
@@ -122,7 +123,7 @@ START: CODE FOR HOME
   flex-direction: row;
 }
 .index-nav ul li {
-  padding-right: 8px;
+  padding-right: 10px;
 }
 .index-nav .toggle {
   display: none;
