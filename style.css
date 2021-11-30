@@ -9,6 +9,7 @@ body{
   color: rgb(194, 88, 2);
 }
 h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(136, 57, 4);
   text-align: center;
 }
@@ -63,6 +64,77 @@ END: CODE FOR ALL PAGE
 /*=========================== 
 START: CODE FOR HOME 
 ===========================*/
+.Home-header {
+  display: block;
+}
+.index-nav {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.index-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: none;
+}
+.show-items {
+  display: flex;
+}
+.index-nav ul li a {
+  color:rgb(194, 88, 2);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+.index-nav ul li a:hover {
+  background-color: rgb(255, 217, 0);
+}
+.index-nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+.main-nav a {
+  font-size: 2rem;
+}
+.Home-video .video{
+  display: block;
+  width: 100vh;
+  margin: auto;
+}
+.video video {
+  width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+}
+.index-nav .menu-label {
+  display: none;
+}
+.index-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.index-nav ul li {
+  padding-right: 8px;
+}
+.index-nav .toggle {
+  display: none;
+}
+.main-nav a {
+  font-size: 4rem;
+}
+.Home-video .video{
+  display: flex;
+  justify-content: space-evenly;
+}
+}
 .Home-main .main-nav a:hover{
   text-decoration:underline 3px;
 }
